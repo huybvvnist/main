@@ -36,8 +36,16 @@
       $('#datepicker').datepicker({
         autoclose: true
       })
-  
-      //iCheck for checkbox and radio inputs
+      $('#datepicker1').datepicker({
+        autoclose: true
+      })
+      $('#datepicker2').datepicker({
+        autoclose: true,
+        startView: 1,
+        minViewMode: "months"
+      })
+
+    //iCheck for checkbox and radio inputs
       $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
         checkboxClass: 'icheckbox_minimal-blue',
         radioClass   : 'iradio_minimal-blue'
