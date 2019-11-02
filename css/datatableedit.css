@@ -52,8 +52,11 @@ table.table td a.add, a.copy {
 table.table td a.view, a.edit {
     color: #FFC107;
 }
-table.table td a.delete {
+table.table td a.delete, a.approve {
     color: #E34724;
+}
+table.table td a.approve {
+    color: deepskyblue;
 }
 table.table td i {
     font-size: 19px;
