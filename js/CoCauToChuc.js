@@ -39,6 +39,15 @@
       $('#datepicker1').datepicker({
         autoclose: true
       })
+      $('#datepicker3').datepicker({
+        autoclose: true
+      })
+      $('#datepicker4').datepicker({
+        autoclose: true
+      })
+      $('#datepicker5').datepicker({
+        autoclose: true
+      })
       $('#datepicker2').datepicker({
         autoclose: true,
         startView: 1,

@@ -1,0 +1,164 @@
+/* pagination table */
+.pagination-new {
+    padding-left: 70%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* resize column table */
+table thead tr th.resizing {
+    cursor: col-resize;
+}
+
+th {
+    cursor: pointer;
+}
+
+th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+td:not(:last-child) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* item in control table */
+.icon-search {
+    padding: 10px;
+    background: silver;
+    min-width: 50px;
+    text-align: center;
+}
+
+.item-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+.item-container label {
+    width: 30%;
+    margin-top: 6px;
+}
+.item-container input.form-control {
+    display: inline;
+    width: 75%;
+}
+/* .item-container .btn-group {
+    margin-left: -8%;
+} */
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.multiselect-container .input-group {
+    margin: 5px;
+}
+
+.multiselect-container li {
+    padding: 0;
+}
+
+.multiselect-all label {
+    font-weight: 700;
+}
+
+.multiselect-container li a {
+    padding: 0;
+}
+
+.multiselect-container li a label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 20px 3px 40px;
+}
+
+.multiselect-container li a label input[type=checkbox] {
+    margin-bottom: 5px;
+}
+
+.multiselect-container li a label.radio {
+    margin: 0;
+}
+
+.multiselect-container li a label.checkbox {
+    margin: 0;
+}
+
+.multiselect-container li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: 700;
+}
+
+.multiselect-container li.multiselect-group-clickable label {
+        cursor: pointer;
+}
+
+.action-template {
+    z-index: 1000;
+    position: absolute;
+    right: 46px;
+    background-color: currentColor;
+    height: fit-content;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.action-template a:hover {
+    background-color: beige;
+}
+#action-tasktemplate {
+    border: none;
+    background: none;
+}
+
+#setting-table {
+    z-index: 1000;
+    position: absolute;
+    right: 15px;
+    width: 27%;
+}
+#setting-table fieldset{
+    background-color: #f9fafc;
+}
+
+#setting-table fieldset .update{
+    margin-top: 10px;
+}
+
+#setting-table fieldset .update button{
+    margin-left: 12px;
+}
+
+#setting-table input.form-control {
+    display: inline;
+    width: 47%;
+}
+
+.setting-table button {
+    border: none;
+    width: 4%;
+    background: none;
+}
+
+.setting-table button:hover{
+    background: none;
+}
+
+.setting-table button:hover{
+    background: none;
+}
+
+.setting-table button.btn-default:active{
+    border: none;
+    background: none;
+}
