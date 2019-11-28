@@ -9,9 +9,9 @@ $(function () {
             level = $row.data('level'),
             id = $row.data('id'),
             $columnName = $row.find('td[data-column="name"]'),
-            children = $table.find('tr[data-parent="' + id + '"]');
-
-        if (children.length) {
+            children = $table.find('tr[data-parent="' + id + '"]')
+            tagSpan = $columnName.find("span").length;
+        if (children.length && tagSpan<2) {
             var expander = $columnName.prepend('' +
                 '<span class="treegrid-expander glyphicon glyphicon-chevron-right"></span>' +
                 '');
@@ -26,6 +26,7 @@ $(function () {
                         .addClass('glyphicon-chevron-down');
 
                     children.show();
+                    reverseShow($table, $row);
                 } else {
                     $target
                         .removeClass('glyphicon-chevron-down')
@@ -36,7 +37,7 @@ $(function () {
             });
         }
 
-        $columnName.prepend('' +
+        if(tagSpan<1)$columnName.prepend('' +
             '<span class="treegrid-indent" style="width:' + 15 * level + 'px"></span>' +
             '');
     });
@@ -61,8 +62,28 @@ $(function () {
             children.hide();
         }
     };
+     // Reverse show all elements
+     reverseShow = function (table, element) {
+        var
+            $element = $(element),
+            id = $element.data('id'),
+            children = table.find('tr[data-parent="' + id + '"]');
+
+        if (children.length) {
+            children.each(function (i, e) {
+                reverseShow(table, e);
+            });
+
+            $element
+                .find('.glyphicon-chevron-right')
+                .removeClass('glyphicon-chevron-right')
+                .addClass('glyphicon-chevron-down');
+
+            children.show();
+        }
+    };
 });
 
-$('#myModalHorizontal').on('hidden.bs.modal', function () {
-    window.location.reload();
-   })
+// $('#myModalHorizontal').on('hidden.bs.modal', function () {
+//     window.location.reload();
+//    })
