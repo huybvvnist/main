@@ -1,0 +1,35 @@
+/* collapse */
+.pop-arw {
+    width: 13px!important;
+    height: 13px!important;
+    background-color: #f9fafc;
+    border: black solid 1px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.arwTop {
+    border-right: 0;
+    border-bottom: 0;
+    top: -7px;
+    left: 50%;
+}
+
+.L-auto {
+    left: auto!important;
+}
+
+.R10 {
+    right: 33px!important;
+}
+
+#setting-table {
+    right: 30px;
+    width: 20%;
+    background-color: rgb(249, 250, 252);
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 5px;
+}

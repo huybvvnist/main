@@ -25,7 +25,6 @@ td:not(:last-child) {
     white-space: nowrap;
     overflow: hidden;
 }
-
 /* item in control table */
 .icon-search {
     padding: 10px;
@@ -100,14 +99,14 @@ td:not(:last-child) {
 }
 
 .multiselect-container li.multiselect-group-clickable label {
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .action-template {
     z-index: 1000;
     position: absolute;
     right: 46px;
-    background-color: currentColor;
+    background-color: snow;
     height: fit-content;
     text-align: center;
     padding-top: 5px;
@@ -124,8 +123,13 @@ td:not(:last-child) {
 #setting-table {
     z-index: 1000;
     position: absolute;
-    right: 15px;
-    width: 27%;
+    right: 30px;
+    width: 21%;
+    background-color: rgb(249, 250, 252);
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 5px;
+    /* border-radius: 15px; */
 }
 #setting-table fieldset{
     background-color: #f9fafc;
@@ -161,4 +165,31 @@ td:not(:last-child) {
 .setting-table button.btn-default:active{
     border: none;
     background: none;
+}
+
+/* collapse */
+.pop-arw {
+    width: 13px!important;
+    height: 13px!important;
+    background-color: #f9fafc;
+    border: black solid 1px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.arwTop {
+    border-right: 0;
+    border-bottom: 0;
+    top: -7px;
+    left: 50%;
+}
+
+.L-auto {
+    left: auto!important;
+}
+
+.R10 {
+    right: 33px!important;
 }

@@ -27,7 +27,6 @@
 .modal-body-perform-task {
     max-height: calc(100vh - (50px+0px));
 }
-
 .modal-header .modal-title {
     font-weight: bold;
 }
@@ -45,4 +44,64 @@
     height: 99%;
     width: 99%;
     overflow-y: initial !important;
+}
+
+/* left modal */
+.left-modal {
+    margin: -15px;
+    width: 24.15%;
+    position: fixed;
+}
+
+.left-modal .header-left-modal {
+    padding: 1px;
+    height: 40px;
+    text-align: center;
+    background-color: #FAFCFE;
+    border: 1px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+.left-modal .content-left-modal {
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: inherit;
+    margin-left: -5px;
+    height: 83%;
+    border-right: 2px solid #ddd;
+}
+
+.left-modal .content-left-modal a {
+    width: -webkit-fill-available;
+    width: 101.1%;
+}
+
+.left-modal .content-left-modal:hover {
+    overflow-y: auto;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.right-modal {
+    width: 75%;
+    margin-left: 25%;
+    margin-top: -15px;
 }

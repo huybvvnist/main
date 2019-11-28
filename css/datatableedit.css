@@ -53,7 +53,10 @@ table.table td a {
     min-width: 24px;
 }
 
-table.table td a.add, a.copy {
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.copy {
     color: #27C46B;
 }
 
@@ -65,12 +68,12 @@ table.table td a.star {
     color: #FFC107;
 }
 
-table.table td a.view {
-    color: aqua;
-}
+/* table.table td a.view {
+    color: red;
+} */
 
 table.table td a.timer {
-    color: aqua;
+    color: black;
 }
 
 table.table td a.default {
@@ -119,9 +122,9 @@ table.table .form-control.error {
     border-color: #f50000;
 }
 
-table.table td .add {
+/* table.table td .add {
     display: none;
-}
+} */
 
 #actions tr.chosen {
     background-color: rgba(41, 103, 182, 0.89);
