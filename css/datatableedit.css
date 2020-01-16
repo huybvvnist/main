@@ -42,9 +42,9 @@ table.table th i {
     cursor: pointer;
 }
 
-table.table th:last-child {
+/* table.table th:last-child {
     width: 100px;
-}
+} */
 
 table.table td a {
     cursor: pointer;
@@ -88,11 +88,15 @@ table.table td a.add_circle {
     color: green;
 }
 
+table.table td a.save_result {
+    color: green;
+}
+
 table.table td a.timer:hover {
     color: #FFC107;
 }
 
-table.table td a.delete, a.approve {
+table.table td a.delete {
     color: #E34724;
 }
 
@@ -104,12 +108,12 @@ table.table td i {
     font-size: 19px;
 }
 
-table.table td a.add i {
+/* table.table td a.add i {
     font-size: 24px;
     margin-right: -1px;
     position: relative;
     top: 3px;
-}
+} */
 
 table.table .form-control {
     height: 32px;

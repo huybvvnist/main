@@ -53,6 +53,16 @@
         startView: 1,
         minViewMode: "months"
       })
+      $('#datepicker6').datepicker({
+        autoclose: true,
+        startView: 1,
+        minViewMode: "months"
+      })
+      $('#datepicker7').datepicker({
+        autoclose: true,
+        startView: 1,
+        minViewMode: "months"
+      })
 
     //iCheck for checkbox and radio inputs
       $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
