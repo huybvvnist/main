@@ -1,5 +1,8 @@
 $(function () {
   $('#example1').DataTable()
+  $('#example4').DataTable({
+    "order": [[ 0, "desc" ]]
+    })
   $('#example2').DataTable({
     'paging': true,
     'lengthChange': false,

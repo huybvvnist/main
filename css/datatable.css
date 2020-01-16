@@ -1,17 +1,26 @@
 /* pagination table */
 .pagination-new {
-    padding-left: 70%;
+    padding-left: 63%;
     padding-top: 5px;
     text-align: center;
 }
-
+#search-page {
+    z-index: 1000;
+    position: absolute;
+    right: 59px;
+    width: 8%;
+    background-color: rgb(249, 250, 252);
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 6px;
+}
 /* resize column table */
 table thead tr th.resizing {
     cursor: col-resize;
 }
 
 th {
-    cursor: pointer;
+    cursor: col-resize;
 }
 
 th {
@@ -20,10 +29,14 @@ th {
     overflow: hidden;
 }
 
-td:not(:last-child) {
+.task-table td:not(:last-child) {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+tbody#actions td:not(:last-child) {
+    cursor: move;
 }
 /* item in control table */
 .icon-search {

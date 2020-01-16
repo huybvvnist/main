@@ -15,7 +15,7 @@ $(function () {
             var expander = $columnName.prepend('' +
                 '<span class="treegrid-expander glyphicon glyphicon-chevron-right"></span>' +
                 '');
-
+            expander.addClass("glyphicon-chevron-right");
             children.hide();
 
             expander.on('click', function (e) {
